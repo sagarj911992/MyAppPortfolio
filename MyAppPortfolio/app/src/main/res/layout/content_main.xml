@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.myappportfolio.myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My NanoDegree App"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|normal"
+        android:textSize="20dp"
+        android:textIsSelectable="true"
+        android:textColorHint="#e59341"
+        android:textColorLink="#e59341"
+        android:onClick="sendMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/btnSportify"
+        android:layout_marginTop="39dp"
+        android:textStyle="bold"
+        android:enabled="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:onClick="sendMessage"
+        android:backgroundTint="#a9d0e4"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Super Duo"
+        android:id="@+id/btmSuoerDuo"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnSportify"
+        android:onClick="sendMessage"
+        android:layout_alignRight="@+id/btnSportify"
+        android:layout_alignEnd="@+id/btnSportify"
+        android:layout_alignLeft="@+id/btnSportify"
+        android:layout_alignStart="@+id/btnSportify"
+        android:backgroundTint="#a9d0e4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build It Bigger"
+        android:id="@+id/btnBiggerApp"
+        android:textStyle="bold"
+        android:layout_below="@+id/btmSuoerDuo"
+        android:onClick="sendMessage"
+        android:layout_alignRight="@+id/btmSuoerDuo"
+        android:layout_alignEnd="@+id/btmSuoerDuo"
+        android:layout_alignLeft="@+id/btmSuoerDuo"
+        android:layout_alignStart="@+id/btmSuoerDuo"
+        android:backgroundTint="#a9d0e4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Ready"
+        android:id="@+id/btnMyApp"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnBiggerApp"
+        android:layout_alignRight="@+id/btmSuoerDuo"
+        android:layout_alignEnd="@+id/btmSuoerDuo"
+        android:onClick="sendMessage"
+        android:layout_alignLeft="@+id/btnBiggerApp"
+        android:layout_alignStart="@+id/btnBiggerApp"
+        android:backgroundTint="#a9d0e4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capson"
+        android:id="@+id/btnCapSton"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnMyApp"
+        android:onClick="sendMessage"
+        android:layout_alignRight="@+id/btnMyApp"
+        android:layout_alignEnd="@+id/btnMyApp"
+        android:layout_alignLeft="@+id/btnMyApp"
+        android:layout_alignStart="@+id/btnMyApp"
+        android:backgroundTint="#a9d0e4"
+        android:allowUndo="true" />
+</RelativeLayout>
